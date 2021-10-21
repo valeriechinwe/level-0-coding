@@ -7,7 +7,7 @@ function commonLetters(s1, s2) {
       }
     }
   }
-  return result;
+  return result.join(", ");
 }
 
 var s1 = "house";
