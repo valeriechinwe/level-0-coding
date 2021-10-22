@@ -1,10 +1,10 @@
-function cToF(x) {
+function celciusToFahrenheit(x) {
   var celcius = x * 1.8 + 32;
 
   return celcius;
 }
 
-function fToC(x) {
+function fahrenheitToCelcius(x) {
   var p = x - 32;
   var fahrenheit = p * 5 / 9;
 
@@ -12,5 +12,5 @@ function fToC(x) {
 }
 
 // test
-console.log(cToF(37));
-console.log(fToC(67));
+console.log(celciusToFahrenheit(37));
+console.log(fahrenheitToCelcius(67));

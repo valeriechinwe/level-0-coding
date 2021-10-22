@@ -9,8 +9,10 @@ function listVowels(str) {
       findVowels.push(letters[i]);
     }
   }
-  console.log("Vowels:", findVowels.join(", ").toLowerCase());
-}
+  var result = findVowels.join(", ").toLowerCase();
+  var finalResult = result.replace(/(.)(?=.*\1)/g, "");
 
+  console.log("Vowels: " + finalResult);
+}
 var str = "Umuzi";
 listVowels(str);
