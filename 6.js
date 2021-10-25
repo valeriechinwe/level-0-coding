@@ -1,6 +1,6 @@
 function maxNum(x, y, z, t) {
-  var i;
-  var maximum = -Infinity;
+  let i;
+  let maximum = -Infinity;
   for (i = 0; i < arguments.length; i++) {
     if (arguments[i] > maximum) {
       maximum = arguments[i];

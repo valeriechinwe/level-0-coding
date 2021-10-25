@@ -1,18 +1,18 @@
 function listVowels(str) {
   const vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
 
-  var letters = str.split('');
-  var findVowels = [];
+  let letters = str.split('');
+  let findVowels = [];
 
-  for (var i in letters) {
+  for (let i in letters) {
     if (vowels.includes(letters[i])) {
       findVowels.push(letters[i]);
     }
   }
-  var result = findVowels.join(", ").toLowerCase();
-  var finalResult = result.replace(/(.)(?=.*\1)/g, "");
+  let result = findVowels.join(", ").toLowerCase();
+  let finalResult = result.replace(/(.)(?=.*\1)/g, ""); // remove duplicates with regex
 
   console.log("Vowels: " + finalResult);
 }
-var str = "Umuzi";
+let str = "Umuzi";
 listVowels(str);

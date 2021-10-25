@@ -1,15 +1,15 @@
 function areaOfTriangle(x, y, z) {
-  var t = x + y + z;
-  var semiPerimeter = t / 2;
+  let t = x + y + z;
+  let semiPerimeter = t / 2;
 
-  var b = semiPerimeter - x;
-  var c = semiPerimeter - y;
-  var d = semiPerimeter - z;
+  let sideOne = semiPerimeter - x;
+  let sideTwo = semiPerimeter - y;
+  let sideThree = semiPerimeter - z;
 
-  var e = b * c * d;
+  let s = sideOne * sideTwo * sideThree;
 
-  var area = Math.sqrt(semiPerimeter * e);
+  let area = Math.sqrt(semiPerimeter * s);
   return area;
 }
 //test
-console.log(areaOfTriangle(5, 6, 7));
+console.log(areaOfTriangle(3, 4, 5));
