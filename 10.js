@@ -12,4 +12,4 @@ function commonLetters(s1, s2) {
 
 let s1 = "house";
 let s2 = "computers";
-console.log(commonLetters(s1, s2));
+console.log("'Common letters: " + commonLetters(s1, s2) + "'");
